@@ -13,13 +13,33 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-   
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div img {
+        width: 400px;
+        height: 300px;
+        border: 2px solid #ff3d0036;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        cursor: pointer;
+        margin: 10px;
+        transition: 400ms;
+    }
+    div img: hover {
+        filter: grayscale(1);
+        transform: scale(1.03);
+    }
 </style>
 <body>
 
     
     <h1>Portfolio</h1>
-   
+
+    <div>
     <img src="..\assets\kc.jpg" width="100px"> 
     <img src="..\assets\toytoy.jpg" width="100px"> 
     <img src="..\assets\lucas.jpg" width="100px"> 
@@ -29,7 +49,7 @@
     <img src="..\assets\me.jpg" width="100px"> 
     <img src="..\assets\mama&me.jpg" width="100px"> 
     <img src="..\assets\broom.jpg" width="100px"> 
-   
+    </div>
     <br>
      <a class="reshumi" href="\html\index.html">MY RESUME</a>
    
